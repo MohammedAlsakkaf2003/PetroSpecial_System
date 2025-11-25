@@ -20,6 +20,7 @@ int main() {
         
         cout << "Select a product (0-3): ";
         cin >> choice;
+        // correct one
 
         if (choice == 0) {
             cout << "Closing System... Goodbye!" << endl;
