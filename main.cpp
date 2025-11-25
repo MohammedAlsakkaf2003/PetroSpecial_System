@@ -8,6 +8,7 @@ int main() {
     int battery_stock = 20;
     
     int choice;
+    int quantity;
 
     cout << "=== Petro Special Inventory System v1.0 ===" << endl;
     cout << "Welcome, Eng. Mohammed." << endl;
@@ -23,11 +24,26 @@ int main() {
 
     if (choice == 1) {
         cout << "You selected: Oils." << endl;
-    } else if (choice == 2) {
+        cout << "Enter quantity to ADD: ";
+        cin >> quantity;
+        oil_stock = oil_stock + quantity;
+        cout << "Done! New Oil Stock: " << oil_stock << endl;
+    } 
+    else if (choice == 2) {
         cout << "You selected: Tires." << endl;
-    } else if (choice == 3) {
+        cout << "Enter quantity to ADD: ";
+        cin >> quantity;
+        tire_stock = tire_stock + quantity;
+        cout << "Done! New Tire Stock: " << tire_stock << endl;
+    } 
+    else if (choice == 3) {
         cout << "You selected: Batteries." << endl;
-    } else {
+        cout << "Enter quantity to ADD: ";
+        cin >> quantity;
+        battery_stock = battery_stock + quantity;
+        cout << "Done! New Battery Stock: " << battery_stock << endl;
+    } 
+    else {
         cout << "Invalid choice!" << endl;
     }
 
