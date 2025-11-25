@@ -17,7 +17,7 @@ int main() {
         cout << "3. Batteries: " << battery_stock << " units" << endl;
         cout << "0. Exit Program" << endl;
         cout << "---------------------------------------" << endl;
-        
+        //just whant to  add comment 
         cout << "Select a product (0-3): ";
         cin >> choice;
         // correct one
